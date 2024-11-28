@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Tropical Escape</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Make the body take full height */
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: #cace84;
+    }
+
+    /* Create a flex container for the body content */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh; /* Full viewport height */
+    }
+
+    /* Ensure the footer stays at the bottom */
+    footer {
+      margin-top: auto;
+      background-color: #2d3436;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Navigation styling */
+    nav {
+      background-color: #009688;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav .navbar-nav .nav-link {
+      color: #ffffff !important;
+      padding: 12px 20px;
+    }
+
+    nav .navbar-nav .nav-link:hover {
+      background-color: #00796b;
+      border-radius: 4px;
+    }
+
+    /* Main Section Styling */
+    section {
+      display: none; /* Hide all sections by default */
+      padding: 50px 0;
+    }
+
+    .active-section {
+      display: block;
+    }
+
+    /* Heading Styles */
+    h1 {
+      color: #004d40;
+      margin-bottom: 25px;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* About Section Styling */
+    #about p {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Gallery Section Styling */
+    #gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Blog Section Styling */
+    #blog ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #blog li {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #blog a {
+      color: #009688;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #blog a:hover {
+      text-decoration: underline;
+      color: #00796b;
+    }
+
+    /* Contact Section Styling */
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact .form-label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    #contact .form-control {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    #contact button {
+      background-color: #009688;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #00796b;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="content-wrapper">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Tropical Escape</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="home-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="about-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gallery-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blog-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+
+    <!-- Home Section -->
+    <section id="home" class="active-section container mt-5">
+      <h1>Welcome to My Tropical Escape</h1>
+      <p>Welcome to My Tropical Paradise! 🌴
+        Embark on an unforgettable journey through the world's most stunning tropical destinations. From crystal-clear turquoise waters to lush jungles, this site is dedicated to sharing the vibrant beauty of tropical regions around the globe. Whether you're seeking adventure, relaxation, or simply a glimpse of paradise, you're in the right place. Join me as I uncover hidden gems, tropical resorts, and the unique charm of island life. Let’s dive into a world where nature’s wonders meet breathtaking landscapes, and experience the best the tropics have to offer—together.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+      <h1>About Me</h1>
+      <p>Hello! I’m Jasleen kaur, an avid traveler with an unwavering love for tropical islands and everything travel-related. My journey into the world of the tropics began early, and it has since become a life-changing passion. I believe the tropics hold some of the most peaceful, inspiring, and rejuvenating places on Earth. Through this site, I want to share my exploration of these natural paradises, from untouched rainforests and vibrant coral reefs to the colorful cultures and traditions of island life. My goal is to inspire you to venture beyond your comfort zone, discover new destinations, and experience the tropical magic I’ve fallen in love with. Come along and let’s discover the beauty of nature’s untouched landscapes together!        .</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+      <h1>Gallery</h1>
+      <p> My favorite photos from my tropical adventures!</p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="images/adventure 1.0.jpg" class="img-fluid" alt="Gallery Image 1">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/adventure b.jpg" class="img-fluid" alt="Gallery Image 2">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/adventure c.jpg" class="img-fluid" alt="Gallery Image 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container mt-5">
+      <h1>Blog</h1>
+      <p>Welcome to my Tropical Travels Blog! Here, I share everything from travel guides and stunning photography to personal stories, tips, and travel hacks, all focused on the amazing tropical regions I've explored. Whether you're dreaming of a relaxing beach vacation, an adventurous rainforest hike, or a cultural immersion in an island community, this blog is your go-to source for all things tropical travel. You’ll find insider tips on the best places to visit, must-try local dishes, and how to travel sustainably while soaking up the beauty of the tropics. Get ready for a fun and informative ride, as I take you to some of the most incredible, peaceful, and awe-inspiring spots on the planet. Let’s travel to paradise!
+      </p>
+      <ul>
+        <li><a href="#">How to Rejuvenate and Find Peace in Tropical Retreats</a></li>
+        <li><a href="#">Delicious Tropical Fruits You Can't Miss on Your Island Escape</a></li>
+        <li><a href="#">Unveiling the Most Secluded Tropical Islands for Your Next Getaway</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+      <h1>Contact Me</h1>
+      <p>If you'd like to connect with me for collaboration, travel tips, or just to say hello, feel free to reach out via the form below.</p>
+      <form action="submit_form.php" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Tropical Escape | Designed by Jasleen kaur</p>
+  </footer>
+
+  <script>
+    // JavaScript for handling navigation link clicks
+    document.getElementById('home-link').addEventListener('click', function() {
+      showSection('home');
+    });
+
+    document.getElementById('about-link').addEventListener('click', function() {
+      showSection('about');
+    });
+
+    document.getElementById('gallery-link').addEventListener('click', function() {
+      showSection('gallery');
+    });
+
+    document.getElementById('blog-link').addEventListener('click', function() {
+      showSection('blog');
+    });
+
+    document.getElementById('contact-link').addEventListener('click', function() {
+      showSection('contact');
+    });
+
+    function showSection(sectionId) {
+      // Hide all sections
+      var sections = document.querySelectorAll('section');
+      sections.forEach(function(section) {
+        section.classList.remove('active-section');
+      });
+
+      // Show the selected section
+      var activeSection = document.getElementById(sectionId);
+      activeSection.classList.add('active-section');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
